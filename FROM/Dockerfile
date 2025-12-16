@@ -1,4 +1,6 @@
 FROM almalinux:9
+LABEL course="devops" \
+      duration="120 HRS"      
 RUN dnf install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
 # COPY google/ /usr/share/nginx/html/
